@@ -1,0 +1,29 @@
+{
+  "puzzles": {
+    "67": {
+      "address": "1MVDYgVaSN6iKKEbsrMEUyxFWsXqxuYpZM",
+      "range_start": "200000000000000000",
+      "range_end": "3ffffffffffffffff",
+      "chunk_size": 10000000000
+    },
+    "71": {
+      "address": "1PWo3JeB9jrGwfHDNpdGK54CRas7fsV69X",
+      "range_start": "200000000000000000",
+      "range_end": "7ffffffffffffffff",
+      "chunk_size": 10000000000
+    },
+    "72": {
+      "address": "1JAQczmPjJxqrPXDyi3ZDNDBh1PULmW9on",
+      "range_start": "400000000000000000",
+      "range_end": "fffffffffffffffff",
+      "chunk_size": 10000000000
+    },
+    "73": {
+      "address": "1BgGZ9tcN4rm9KBzDn7K1Qlei-sz6bGOB",
+      "range_start": "800000000000000000",
+      "range_end": "1ffffffffffffffffff",
+      "chunk_size": 10000000000
+    }
+  }
+}
+
