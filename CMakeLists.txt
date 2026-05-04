@@ -1,26 +1,18 @@
-# CMakeLists.txt for BitCRACKQ Kangaroo CUDA project
-
 cmake_minimum_required(VERSION 3.10)
 
-# Set project name and version
-project(BitCRACKQ VERSION 1.0)
+project(ScaleAtoN-Crypto-Mapper)
 
-# Find CUDA
-find_package(CUDA REQUIRED)
+find_package(CCUDA REQUIRED)
 
-# Specify the source files
+set(CMAKE_CUDA_STANDARD 14)
+set(CMAKE_CUDA_ARCH_BIN "70;75;80;86")
+
+include_directories(include)
+
 set(SOURCES
-    main.cu
-    # Add other source files here
+    src/main.cu
+    src/kangaroo_kernel.cu
+    src/ec_math.cu
 )
 
-# Include directories
-include_directories(${CUDA_INCLUDE_DIRS})
-
-# Define executable
-cuda_add_executable(BitCRACKQ ${SOURCES})
-
-# Set additional options if needed
-set_target_properties(BitCRACKQ PROPERTIES CUDA_SEPARABLE_COMPILATION ON)
-
-# Link any required libraries here
+add_executable(ScaleAtoN-Crypto-Mapper ${SOURCES})
